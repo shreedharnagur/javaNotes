@@ -1,0 +1,2630 @@
+> SOPLN('*') -> Print the * and cursor moves to nextline
+> SOP('*')->  Print the * and cursor remain in same line ,will not go to next line.
+ex:
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+for(int i=1;i<=5;i++) {
+	System.out.println("*");
+}
+System.out.println();
+for(int i=1;i<=5;i++) {
+	System.out.print("*"+" ");
+}
+	}
+
+}
+output:
+*
+*
+*
+*
+*
+
+* * * * * 
+
+-------------------------------------------------
+
+> To print a pattern like below:
+
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+public class pract1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+for(int k=1;k<=5;k++) {
+		for(int i=1;i<=5;i++) {
+	System.out.print("*"+" ");
+}
+System.out.println();
+	}
+	}
+
+}
+----------------------------------------------------------------------------
+
+> public class pract1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=5;j++) {
+		System.out.print(j+" ");
+	}
+	System.out.println();
+}
+System.out.println();
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=5;j++) {
+		System.out.print(i+" ");
+	}
+	System.out.println();
+}
+	}
+
+}
+output:
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+
+1 1 1 1 1 
+2 2 2 2 2 
+3 3 3 3 3 
+4 4 4 4 4 
+5 5 5 5 5 
+-----------------------------------------------------------------------
+
+> ASCII VALUE of 
+A=65
+.
+.
+z=90
+ public class pract1 {
+
+	public static void main(String[] args) {
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=5;j++) {
+		System.out.print((char)(j+64)+" ");//first printing the numbers like 65 66 67 68 in each row and that is the ascii value of characters ,so convert integer values to caharacyer using char keyword.
+	}
+	System.out.println();
+}
+
+	}
+
+}
+output:
+A B C D E 
+A B C D E 
+A B C D E 
+A B C D E 
+A B C D E 
+
+-----------------------------------------------------------------------------------------------------------
+public class Practice1 {
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+int rows =5;
+		for(int i=1;i<=rows;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+output:
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+> To print charcters:for same program follow 
+int rows1 =5;
+		for(int i=1;i<=rows1;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print((char)(j+64)+" ");
+			}
+			System.out.println();
+		}
+	}
+	
+output:
+A 
+A B 
+A B C 
+A B C D 
+A B C D E 
+
+int rows2 =5;
+	for(int i=1;i<=rows1;i++) {
+		for(int j=1;j<=i;j++) {
+			System.out.print(j+" ");
+		}
+		System.out.println();
+	}
+
+output:
+
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+
+> to print below:
+1 
+1 0 
+1 0 1 
+1 0 1 0 
+1 0 1 0 1 
+
+for(int i=1;i<=5;i++) {
+			for(int j=1;j<=i;j++) {
+		System.out.print((j%2)+" ");
+			}
+			System.out.println();
+		}
+	}
+
+
+
+
+
+> To print:
+A 
+A b 
+A b C 
+A b C d 
+A b C d E 
+
+for(int i=1;i<=5;i++) {
+			for(int j=1;j<=i;j++) {
+				if((j%2)==1) {
+		System.out.print((char)(j+64)+" ");
+				}
+				else {
+					System.out.print((char)(j+96)+" ");
+				}
+			}
+			System.out.println();
+		}
+----------------------------------------------------------------------
+>  TO Print a pattern like below:
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+int k=1;
+	for(int i=1;i<=5;i++) {
+		for(int j=1;j<=i;j++) {
+			System.out.print(k+" ");
+			k++;
+		}
+		System.out.println();
+	}
+
+> To convert to characters: 
+
+int k=1;
+	for(int i=1;i<=5;i++) {
+		for(int j=1;j<=i;j++) {
+			System.out.print((char)(k+64)+" ");
+			k++;
+		}
+		System.out.println();
+	}
+
+output:
+A 
+B C 
+D E F 
+G H I J 
+K L M N O 
+-------------------------------------------------------------
+> To print a pattern like below:
+1 
+0 1 
+0 1 0 
+1 0 1 0 
+1 0 1 0 1 
+
+
+public class Pract2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int k=1;
+		int rows =5;
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=i;j++) {
+		System.out.print((k%2)+" ");
+		k++;
+		}
+		
+	System.out.println();
+}
+	}
+
+}
+
+> To print a pattern like below:
+1 
+0 1 
+1 0 1 
+0 1 0 1 
+1 0 1 0 1 
+
+public class Pract2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int k=1;
+		int rows =5;
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=i;j++) {
+		System.out.print((i+j-1)%2+" ");
+		k++;
+		}
+		
+	System.out.println();
+}
+	}
+
+}
+
+> To print a pattern like below:
+
+A 
+b C 
+d E f 
+G h I j 
+K l M n O
+
+
+	int k=1;
+		for(int i=1;i<=5;i++) {
+	for(int j=1;j<=i;j++) {
+     if((k%2)==1) {
+    	 System.out.print((char)(k+64)+" ");
+     }
+     else {
+    	 System.out.print((char)(k+96)+" ");
+     }
+		k++;
+	}
+	System.out.println();
+}
+
+
+---------------------------------- 
+
+
+> To print a pattern like below:
+
+* * * * *  (reverse shape of previous shapes)
+* * * * 
+* * * 
+* * 
+* 
+
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=6-i;j++) {
+		System.out.print("*"+" ");
+		
+		}
+		
+	System.out.println();
+}
+
+note: In Inner for loop ,for normal shape, end condition is "i",for reverse shape end condition is "n+1-i"
+----------------------------------------------------------------
+> To print a pattern like below:
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
+
+public class pract3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int n=5;
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=n-i;j++) {
+	System.out.print(" "+" ");
+}
+for(int j=1;j<=i;j++) {
+	System.out.print("*"+" ");
+}
+System.out.println();
+}
+	}
+
+}
+
+---------------------------------------------------------------
+> print below patterns:
+
+1.                      
+        1                                  
+      1 2 
+    1 2 3 
+  1 2 3 4 
+1 2 3 4 5 
+
+for(int k=1;k<=5;k++) {
+	for(int l=1;l<=5-k;l++) {
+		System.out.print(" "+" ");
+	}
+	for(int l=1;l<=k;l++) {
+		System.out.print(l+" ");
+		
+	}
+	System.out.println();
+	
+}
+
+2.
+        5 
+      5 4 
+    5 4 3 
+  5 4 3 2 
+5 4 3 2 1 
+
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=(5-i);j++) {
+	System.out.print(" "+" ");
+}
+for(int j=5;j>=(5+1-i);j--) {
+	System.out.print(j+" ");
+}
+System.out.println();
+}
+
+3.)
+1 2 3 4 5 
+  1 2 3 4 
+    1 2 3 
+      1 2 
+        1 
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=(i-1);j++) {
+	System.out.print(" "+" ");
+}
+for(int j=1;j<=6-i;j++) {
+	System.out.print(j+" ");
+}
+System.out.println();
+}
+
+4.
+        1 
+      2 1 
+    3 2 1 
+  4 3 2 1 
+5 4 3 2 1 
+
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=(5-i);j++) {
+	System.out.print(" "+" ");
+}
+for(int j=i;j>=1;j--) {
+	System.out.print(j+" ");
+}
+System.out.println();
+}
+
+5.
+        5 
+      4 5 
+    3 4 5 
+  2 3 4 5 
+1 2 3 4 5 
+
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=(5-i);j++) {
+	System.out.print(" "+" ");
+}
+for(int j=6-i;j<=5;j++) {
+	System.out.print(j+" ");
+}
+System.out.println();
+}
+
+6.
+5 4 3 2 1 
+  5 4 3 2 
+    5 4 3 
+      5 4 
+        5 
+
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=(i-1);j++) {
+	System.out.print(" "+" ");
+}
+for(int j=5;j>=i;j--) {
+	System.out.print(j+" ");
+}
+System.out.println();
+}
+
+7.
+5 4 3 2 1 
+  4 3 2 1 
+    3 2 1 
+      2 1 
+        1
+
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=(i-1);j++) {
+	System.out.print(" "+" ");
+}
+for(int j=6-i;j>=1;j--) {
+	System.out.print(j+" ");
+}
+System.out.println();
+}
+
+8.
+1 2 3 4 5 
+  2 3 4 5 
+    3 4 5 
+      4 5 
+        5 
+
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=(i-1);j++) {
+	System.out.print(" "+" ");
+}
+for(int j=i;j<=5;j++) {
+	System.out.print(j+" ");
+}
+System.out.println();
+}
+
+note: For normal shape In 1st inner for loop ,end condition is "n-i" .For reverse shape in 1st inner for loop, end condition is "i-1";
+_______________________________________________________________________________
+Using 3rd variable:
+--------------------
+
+_______________________________________________________________________________________________________________________________
+> To Print a pattern like below:
+1 
+2 3 
+3 4 5 
+4 5 6 7 
+5 6 7 8 9 
+
+int k;
+
+		for(int i=1;i<=5;i++) {
+	k=i;
+	
+	for(int j=1;j<=i;j++) {
+		System.out.print(k+" ");
+		k++;
+	}
+	System.out.println();
+	
+}
+	}
+
+}
+
+_________________________________________________________________________________
+> To Print a pattern like below:
+1 
+3 2 
+6 5 4 
+10 9 8 7 
+15 14 13 12 11 
+
+int n=5;
+	int	sum=0;
+		for(int i=1;i<=n;i++) {
+			sum=sum+i;
+			k=sum;
+			
+			for(int j=1;j<=i;j++) {
+				System.out.print(k+" ");
+				k--;
+			}
+			System.out.println();
+		}
+
+_______________________________________________________________________________
+> To Print below:
+      
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+* * * * * * * * * 
+
+for(int i=1;i<=5;i++) {
+		for(int j=1;j<=5-i;j++) {
+			System.out.print(" "+" ");
+		}
+		for(int j=1;j<=i;j++) {
+			System.out.print("*"+" ");
+		}
+		for(int j=i-1;j>=1;j--) {
+			System.out.print("*"+" ");
+		}
+		
+		System.out.println();
+		}
+
+> To print:
+
+        1 
+      1 2 1 
+    1 2 3 2 1 
+  1 2 3 4 3 2 1 
+1 2 3 4 5 4 3 2 1 
+
+for(int i=1;i<=5;i++) {
+		for(int j=1;j<=5-i;j++) {
+			System.out.print(" "+" ");
+		}
+		for(int j=1;j<=i;j++) {
+			System.out.print(j+" ");
+			
+		}
+		for(int j=i-1;j>=1;j--) {
+			System.out.print(j+" ");
+			
+		}
+		
+		System.out.println();
+		}
+
+> To print:
+        A 
+      b C d 
+    E f G h I 
+  j K l M n O p 
+Q r S t U v W x Y 
+
+int l=1;
+	for(int i=1;i<=5;i++) {
+		for(int j=1;j<=5-i;j++) {
+			System.out.print(" "+" ");
+		}
+		for(int j=1;j<=i;j++) {
+			if((l%2)==1) {
+			System.out.print((char)(l+64)+" ");
+			}
+			else {
+				System.out.print((char)(l+96)+" ");
+			}
+			l++;
+		}
+		for(int j=i-1;j>=1;j--) {
+			if((l%2)==1) {
+			System.out.print((char)(l+64)+" ");
+			}
+			else {
+				System.out.print((char)(l+96)+" ");
+			}
+			l++;
+		}
+		System.out.println();
+		}
+	
+
+
+
+_____________________________________________________________________________________
+> To print a pattern like below:
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+* * * * * * * * * 
+  * * * * * * * 
+    * * * * * 
+      * * * 
+        * 
+
+public class Pract5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int n=5;
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=n-i;j++) {
+	System.out.print(" "+" ");
+}
+for(int j=1;j<=i;j++) {
+	System.out.print("*"+" ");
+}
+for(int j=i-1;j>=1;j--) {
+	System.out.print("*"+" ");
+}
+System.out.println();
+	}
+for(int i=n-1;i>=1;i--) {
+	for(int j=1;j<=n-i;j++) {
+	System.out.print(" "+" ");
+}
+for(int j=1;j<=i;j++) {
+	System.out.print("*"+" ");
+}
+for(int j=i-1;j>=1;j--) {
+	System.out.print("*"+" ");
+}
+System.out.println();
+	}
+
+}
+}
+
+____________________________________________________________________
+> 
+To print a pattern like below:
+        5
+      5 4 5 
+    5 4 3 4 5 
+  5 4 3 2 3 4 5 
+5 4 3 2 1 2 3 4 5 
+  5 4 3 2 3 4 5 
+    5 4 3 4 5 
+      5 4 5 
+        5 
+
+for(int i=1;i<=n;i++) {
+	for(int j=1;j<=n-i;j++) {
+	System.out.print(" "+" ");
+}
+for(int j=5;j>=n+1-i;j--) {
+	System.out.print(j+" ");
+}
+for(int j=n+2-i;j<=n;j++) {
+	System.out.print(j+" ");
+}
+
+System.out.println();
+	}
+
+for(int i=n-1;i>=1;i--) {
+	for(int j=1;j<=n-i;j++) {
+	System.out.print(" "+" ");
+}
+for(int j=5;j>=n+1-i;j--) {
+	System.out.print(j+" ");
+}
+for(int j=n+2-i;j<=n;j++) {
+	System.out.print(j+" ");
+}
+
+System.out.println();
+	}
+
+
+> To print a pattern like below:
+
+        1 
+      2 1 2 
+    3 2 1 2 3 
+  4 3 2 1 2 3 4 
+5 4 3 2 1 2 3 4 5 
+  4 3 2 1 2 3 4 
+    3 2 1 2 3 
+      2 1 2 
+        1 
+
+for(int i=1;i<=n;i++) {
+	for(int j=1;j<=n-i;j++) {
+	System.out.print(" "+" ");
+}
+for(int j=i;j>=1;j--) {
+	System.out.print(j+" ");
+}
+for(int j=2;j<=i;j++) {
+	System.out.print(j+" ");
+}
+
+System.out.println();
+	}
+for(int i=n-1;i>=1;i--) {
+	for(int j=1;j<=n-i;j++) {
+	System.out.print(" "+" ");
+}
+for(int j=i;j>=1;j--) {
+	System.out.print(j+" ");
+}
+for(int j=2;j<=i;j++) {
+	System.out.print(j+" ");
+}
+
+System.out.println();
+	}
+_______________________________________________________________
+> To print below pattern:
+
+   * * * * * 
+   * *   * * 
+   *   *   * 
+   * *   * * 
+   * * * * *                                                                 
+
+public class pract6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int n=5;
+		for(int i=1;i<=n;i++) {
+	for(int j=1;j<=5;j++) {
+		if(i==1 || j==1 || i==n || j==n || i==j || i+j==n+1) {
+			System.out.print("*"+" ");
+		}
+		else {
+			System.out.print(" "+" ");
+		}
+	}
+
+		System.out.println();
+	}
+
+}
+}
+
+
+
+> To print:
+
+    * * * * * * * 
+    * *       * * 
+    *   *   *   * 
+    * * * * * * * 
+    *   *   *   * 
+    * *       * * 
+    * * * * * * * 
+
+public class pract6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int n=7;
+		for(int i=1;i<=n;i++) {
+	for(int j=1;j<=n;j++) {
+		if(i==1 || j==1 || i==n || j==n || i==j || i+j==n+1|| i==((n/2)+1)) {
+			System.out.print("*"+" ");
+		}
+		else {
+			System.out.print(" "+" ");
+		}
+	}
+
+		System.out.println();
+	}
+
+}
+}
+__________________________________________________________________
+
+> To print below pattern:
+
+     * *   * *   
+   *     *     * 
+   *           * 
+     *       *   
+       *   *     
+         *       
+
+public class pract7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for(int i=0;i<=5;i++) {
+	for(int j=0;j<=6;j++) {
+		if(i==1 && j%3==0 || i==0 && j%3!=0 || i-j==2 || i+j==8) {
+			System.out.print("*"+" ");
+		}
+		else {
+			System.out.print(" "+" ");
+		}
+	}
+
+		System.out.println();
+	}
+
+	}
+
+}
+
+> to print:
+
+     * *   * *   
+   *     *     * 
+   * L O K I   * 
+     *       *   
+       *   *     
+         *       
+public class pract7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for(int i=0;i<=5;i++) {
+	for(int j=0;j<=6;j++) {
+		if(i==1 && j%3==0 || i==0 && j%3!=0 || i-j==2 || i+j==8) {
+			System.out.print("*"+" ");
+		}
+		else if(i==2 && j==1 ) {
+			System.out.print("L"+" ");
+			
+		}
+		else if(i==2 && j==2 ) {
+			System.out.print("O"+" ");
+			
+		}
+		else if(i==2 && j==3) {
+			System.out.print("K"+" ");
+			
+		}
+		else if(i==2 && j==4 ) {
+			System.out.print("I"+" ");
+		}
+			
+		else {
+			System.out.print(" "+" ");
+		}
+	}
+
+		System.out.println();
+	}
+
+	}
+
+}
+
+> To Print below:
+
+     * *   * *   
+   *     *     * 
+   * L O K I   * 
+     *       *   
+       *   *     
+         *       
+         *       
+       *   *     
+     *       *   
+   * L O K I   * 
+   *     *     * 
+     * *   * *  
+
+same prg. as above and write same code below that code ,change in i condition from 5 to 0.
+                        for(int i=5;i>=0;i--) {
+			for(int j=0;j<=6;j++) {
+				if(i==1 && j%3==0 || i==0 && j%3!=0 || i-j==2 || i+j==8) {
+					System.out.print("*"+" ");
+				}
+				else if(i==2 && j==1 ) {
+					System.out.print("L"+" ");
+					
+				}
+				else if(i==2 && j==2 ) {
+					System.out.print("O"+" ");
+					
+				}
+				else if(i==2 && j==3) {
+					System.out.print("K"+" ");
+					
+				}
+				else if(i==2 && j==4 ) {
+					System.out.print("I"+" ");
+				}
+					
+				else {
+					System.out.print(" "+" ");
+				}
+			}
+
+				System.out.println();
+			}
+ 
+
+________________________________________________________________________
+Recursion:
+========
+
+public class Pract8 {                                              
+public static void Print_num(int num) {
+	if(num==0) {
+		System.out.println(num);
+		return ;
+	}
+	Print_num(num-1);
+	System.out.println(num);
+	
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=5;
+Print_num(num);
+	}
+
+}
+
+output:
+
+0
+1
+2
+3
+4
+5
+-----------------------
+
+>
+public class Pract8 {
+public static void Print_num(int num) {
+	if(num==0) {
+		System.out.println(num);
+		return ;
+	}
+	System.out.println(num);
+	Print_num(num-1);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=5;
+Print_num(num);
+	}
+
+}
+output:
+
+5
+4
+3
+2
+1
+0
+-------------------------------
+> 
+public class Pract8 {
+public static int Print_num(int num) {
+	if(num==0) {
+		System.out.println(num);
+		return num;
+	}
+	System.out.println(num);
+	return Print_num(num-1);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=5;
+int res= Print_num(num);
+System.out.println(res);
+	}
+
+}
+-----------------------------
+output:
+
+5
+4
+3
+2
+1
+0
+0
+
+
+_________________________________________________
+> To print even and Odd numbers:
+public class Pract9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int n=100;
+for(int i=1;i<=n;i++) {
+	if(i%2!=0) {
+	System.out.print(i+" ");
+}
+	else {
+		System.out.print(i);
+		System.out.println();
+	}
+
+	}
+		}
+}
+
+
+output:
+1 2
+3 4
+5 6
+7 8
+9 10
+11 12
+13 14
+15 16
+17 18
+...
+...
+..
+
+
+__________________________________________________________________________________________
+> To print Factors of a number:
+
+int num =435;
+	for(int i=1;i<=num;i++) {
+		if(num%i==0) {
+			System.out.println(i+" ");
+		}
+	}
+
+output:
+1 
+3 
+5 
+15 
+29 
+87 
+145 
+435 
+__________________________________________________________________________
+> Write a program to count Total no. of factors of a given Number:
+int count=0;
+	int num1=342;
+	for(int i=1;i<=num1;i++) {
+		if(num1%i==0) {
+			count++;
+		}
+	}
+	System.out.println(count);
+
+output:
+12
+
+_____________________________________________________
+> Write a program to check whether the given number is prime or not:
+
+public class Pract10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int count=0;
+		int num=5;
+		for(int i=1;i<=num;i++) {
+			if(num%i==0) {
+				count++;
+			}
+		}
+		if(count==2) {
+			System.out.println("Its Prime");
+		}
+		else {
+			System.out.println("Not prime");
+		}
+
+	}
+
+}
+
+output:
+Its Prime
+
+_________________________________________________________________________________________________
+
+
+> Write a program to print all the prime numbers upto 10000:
+
+for(int k=1;k<=10000;k++) {
+			int count1=0;
+			int num1=k;
+			for(int i=1;i<=num1;i++) {
+				if(num1%i==0) {
+					count1++;
+				}
+			}
+			if(count1==2) {
+				System.out.println(num1);
+			}
+					}
+
+output:
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+53
+59
+61
+....
+,....
+....
+...
+9973.
+________________________________________________________________________
+> To Print below:
+
+2 
+3 5 
+7 11 13                   (Prime numbers)
+17 19 23 29 
+31 37 41 43 47 
+
+
+ public class Pract11 {
+	
+	public static int c_fact(int num) {
+		int count=0;
+		for(int i=1;i<=num;i++) {
+			if(num%i==0) {
+				count++;
+			}
+		}
+		return count;
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int k = 1;
+		for(int i=1; i<=5; i++) {
+			for(int j=1; j<=i; j++) {
+				while(true) {
+					if(c_fact(k)==2) {
+						System.out.print(k+" ");
+						k++;
+						break;
+					}
+					else {
+						k++;
+					}
+				}
+				
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+_______________________________________________________________________
+
+>Write a program to print the sum of first 15 prime numbers.
+
+public class Pract11 {
+	public static int c_fact(int num) {
+		int count=0;
+		for(int i=1;i<=num;i++) {
+			if(num%i==0) {
+				count++;
+			}
+		}
+		return count;
+	}
+int n=15;
+		int count=0;
+		int k1=1;
+		int sum=0;
+		while(true) {
+			if(c_fact(k1)==2) {
+				System.out.println(k1);
+				sum=sum+k1;
+				count++;
+				
+			}
+			k1++;
+			if(count==n) {
+				System.out.println("sum is "+sum);
+				break;
+			}
+		}
+
+	}
+}
+
+
+output:
+2
+3[
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+sum is 328
+
+________________________________________________
+
+> To find reverse of a number:
+public class Pract12 {
+	public static int reverse(int num) {
+		int res=0;                                     /// Refer memory map in phone///
+		while(num!=0) {
+			int rem=num%10;
+			res=(res*10)+rem;
+			num=num/10;
+			
+		}
+		return res;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=567;
+int rev=reverse(num);
+System.out.println(rev);
+
+	}
+
+}
+
+output:
+765
+________________________________________________________________________________
+> To find palindrome of number:
+
+public class Pract12 {
+	public static int reverse(int num) {
+		int res=0;
+		while(num!=0) {
+			int rem=num%10;
+			res=(res*10)+rem;
+			num=num/10;
+			
+		}
+		return res;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=12321;
+int rev=reverse(num);
+if(num==rev) {
+	System.out.println("Its palindrome");
+}
+else {
+	System.out.println("Not palindrome");
+}
+	}
+
+}
+
+
+output:
+Its palindrome
+_____________________________________________________________________________________________
+> Write a program to print all the palindrome numbers between 1 to 1000.
+
+public class Pract12 {
+	public static int reverse(int num) {
+		int res=0;
+		while(num!=0) {
+			int rem=num%10;
+			res=(res*10)+rem;
+			num=num/10;
+			
+		}
+		return res;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+for(int k=1;k<=1000;k++) {
+	int num=k;
+int rev=reverse(num);
+if(num==rev) {
+	System.out.println(num);
+}
+
+}
+	
+	}
+
+}
+
+output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+11
+22
+33
+44
+55
+66
+77
+88
+99
+101
+111
+121
+131
+141
+151
+161
+171
+181
+191
+202
+212
+222
+232
+242
+252
+262
+272
+282
+...
+...
+999
+
+
+
+
+> To print below:
+1 
+2 3                       //Palindrome numbers//
+4 5 6 
+7 8 9 11 
+22 33 44 55 66 
+
+public class Pract14 {
+public static int reverse(int num) {
+	int res=0;
+	while(num!=0) {
+		int rem=num%10;
+		res=(res*10)+rem;
+		num=num/10;
+	}
+	return res;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+int k=1;
+for(int i=1;i<=5;i++) {
+	for(int j=1;j<=i;j++) {
+		while(true) {
+			if(reverse(k)==k) {
+				System.out.print(k+" ");
+				k++;
+				
+				break;
+			}
+			else {
+				k++;
+			}
+		}
+	}
+	System.out.println();
+}
+	}
+
+}
+
+
+_______________________________________________
+> Write a Program to check whether the given number is perfect or not.
+
+Perfect Number: A number in which sum of all its factors except the given number(number that is taken) is called Perfect number.
+ex: 6  -> 1,2,3. 6(not to take)
+1+2+3=6
+6=6.
+6 is prfect number.
+
+
+public class Pract13 {
+public static int add_fact(int num) {
+	int sum=0;
+	for(int i=1;i<num;i++) {
+		if(num%i==0) {
+			sum=sum+i;
+		}
+	}
+	return sum;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=6;
+int res=add_fact(num);
+if(num==res) {
+	System.out.println("Its perfect");
+}
+else {
+	System.out.println("Its not");
+}
+	}
+
+}
+
+output:
+Its perfect
+
+> To print all the perfect numbers from 1 to 10000.
+
+
+public class Pract13 {
+public static int add_fact(int num) {
+	int sum=0;
+	for(int i=1;i<num;i++) {
+		if(num%i==0) {
+			sum=sum+i;
+		}  
+	}
+	return sum;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+for(int k=1;k<=10000;k++) {
+	int num=k;
+	int res=add_fact(num);
+	if(num==res) {
+		System.out.println(num);
+	}
+	
+}
+	
+	}
+
+}
+
+output:
+6
+28
+496
+8128
+________________________________________________________________________
+> Write a program to count total number of digits present in a given number.
+
+public class Pract14 {
+public static int c_digit(int num){
+	int digit=0;
+	while(num!=0) {
+		num/=10;
+		digit++;
+	}
+	return digit;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=234;
+int res=c_digit(num);
+System.out.println(res);
+	}
+
+}
+output:
+3
+_______________________________________________
+>Definition of Amstrom number:
+ 
+
+public class Pract15 {
+	public static int cArm(int num) {
+		int digit=cdigit(num);
+		int res=0;
+		while(num!=0) {
+			int rem=num%10;
+			res=(int)Math.pow(rem, digit)+res;
+			num=num/10;
+		}
+		return res;
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num=153;
+		int res=cArm(num);
+		if(num==res) {
+			System.out.println("Armstrong");
+		}
+		else {
+			System.out.println("its not armstrong");
+		}
+			}
+			public static int cdigit(int num) {
+				int count=0;
+				while(num!=0) {
+					num/=10;
+					count++;
+				}
+				return count;
+			}
+
+	}
+
+
+output:
+Armstrong
+_________________________________________________________________________
+Given an integer N,returns the smallest integer greaer than N,the sum of whose digits is twice as big as the sum of digits of N.
+Ex: 1. Given N=14  (1+4=5)-> 5*2='10', the function should return 19 (1+9='10').
+
+
+public class AssQues {
+	public static int digit_sum(int num) {
+int sum=0;
+while(num!=0) {
+	int rem=num%10;
+	sum=sum+rem;
+	num=num/10;
+}
+return sum;
+	
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=99;
+int res=num+1;
+while(digit_sum(num)*2!=digit_sum(res)) {
+	res++;
+	
+}
+System.out.println(res);
+	}
+
+}
+
+output:
+9999
+
+______________________________________________________
+> Write a program to check whether the given number is happy or not.
+A digit is called happy if the sum of the square of the digit gives 1 after the sequence of steps, and in each step, the number is replaced by the previous sum of the square. its unhappy if it not ends with 1 but it ends with 4.
+
+public class Pract16 {
+	public static int digit_sqr_sum(int num) {
+int res=0;
+while(num!=0) {
+	int rem=(num%10);
+	res=(rem*rem)+res;
+	num=num/10;
+}
+return res;
+	
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num=7;
+		int res=digit_sqr_sum(num);
+	
+		while(res!=1 && res!=4) {
+		res=digit_sqr_sum(res);
+			
+		}
+		if(res==1) {
+		System.out.println("is Happy Number");
+		}
+		else {
+			System.out.println("Not happy");
+		}
+		
+			}
+
+		
+	}
+
+output:
+is Happy Number
+
+_________________________
+
+> Automorphic number
+> Pronic number
+> niven number
+> spy number
+> twisted prime
+> Krishnamurthy number
+
+
+RECURSION
+=========
+1.each & every recursive program starts with termination condition.
+2.when we calling method inside a method ,parameters we are passing are 2nd itarative parameters.
+3.try not to declare any variables with in th method.
+
+
+write a program to print the sum of first ten natural numbers.
+
+public class Natural {
+    public static void print_num(int num,int sum){
+        if (num==10){
+            System.out.println(sum+num);
+            return;
+        }
+        print_num(num+1,sum+num);
+    }
+
+    public static void main(String[] args) {
+        int num=1;
+        int sum=0;
+        print_num(1,0);
+    }
+}
+
+"D:\Program Files\Java\jdk-19\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\lib\idea_rt.jar=49991:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\HP\IdeaProjects\Recursive\out\production\Recursive Natural
+55
+
+Process finished with exit code 0
+
+
+public class Natural {
+    public static int print_num(int num,int sum){
+        if (num==10){
+            
+            return sum+num;
+        }
+       return print_num(num+1,sum+num);
+    }
+
+    public static void main(String[] args) {
+        int num=1;
+        int sum=0;
+        System.out.println(print_num(1,0));
+    }
+}
+
+
+
+reversing number
+public class Natural {
+    public static int print_num(int num,int res){
+        if (num==0){
+
+            return res;
+        }
+       return print_num(num/10,((res*10)+(num%10)));
+    }
+
+    public static void main(String[] args) {
+        int num=123;
+        int res=0;
+        System.out.println(print_num(123,0));
+    }
+}
+
+o/p:321
+
+write a program to count the total number of count present in a given number.
+
+public class Natural {
+    public static int print_num(int num,int count){
+        if (num==0){
+
+            return count;
+        }
+       return print_num(num/10,count+=1);
+    }
+
+    public static void main(String[] args) {
+        int num=123;
+        int count=0;
+        System.out.println(print_num(123,0));
+    }
+}
+
+o/p:3
+
+
+armstrong
+
+
+public class armstrong {
+
+
+    public static int print(int num,int count){
+        if (num==0){
+            return count;
+        }
+        return print(num/10,count+=1);
+    }
+    public static int checkArm(int num,int sum,int digit){
+        if (num==0){
+            return sum;
+        }
+        return checkArm(num/10,sum+(int)Math.pow(num%10,digit),digit);
+    }
+    public static void main(String[] args) {
+        int num=153;
+        int count=0;
+        int digit=print(num,0);
+       // System.out.println(checkArm(num,0,digit));
+        int res=checkArm(num,0,digit);
+    if (num==res){
+        System.out.println("its armstrong");
+    }
+    else {
+        System.out.println("its not");
+    }
+    }
+}
+
+o.p:its armstrong
+
+
+public class ArmStrong {
+	
+	public static int print(int n,int digit) {
+		while(n>0) {
+		if(n==0) {
+			return digit;
+		}
+		n/=10;
+	  digit++;
+		}
+	 return digit;
+	}
+	public static int armStrong(int n,int sum1,int count) {
+		while(n>0) {
+		int a=n%10;
+		int res=(int) (Math.pow(a,count));
+	 sum1=sum1+res;
+	 n/=10;
+		}
+		return sum1;
+	}
+	public static void main(String[] args) {
+		int n=153;
+		int digit=0;
+		int sum1=0;
+		int count=print(n,digit);
+		System.out.println(armStrong(n,sum1,count));
+	}
+
+}
+
+
+
+write a program to create an array and to add random values to it.
+
+package array;
+
+import java.util.Arrays;
+
+public class ArrayAdd {
+    public static void main(String[] args) {
+        int[] arr=new int[5];
+        int k=10;
+        for (int i=0;i<arr.length;i++){
+            arr[i]=k;
+            k+=10;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+}
+
+o/p:"D:\Program Files\Java\jdk-19\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\lib\idea_rt.jar=54299:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\HP\IdeaProjects\Array\out\production\Array array.ArrayAdd
+[10, 20, 30, 40, 50]
+
+Process finished with exit code 0
+
+*if arr used instead of Arrays.toString(arr) it will print address of the array.
+
+
+
+package array;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ArrayAdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the size of array");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("enter the values");
+            arr[i] = sc.nextInt();
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+}
+
+"D:\Program Files\Java\jdk-19\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\lib\idea_rt.jar=54315:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\HP\IdeaProjects\Array\out\production\Array array.ArrayAdd
+enter the size of array
+5
+enter the values
+1
+enter the values
+2
+enter the values
+3
+enter the values
+4
+enter the values
+5
+[1, 2, 3, 4, 5]
+
+Process finished with exit code 0
+
+
+WRITE A PROGRAM TO ADD AN ELEMENT CALLED ELE AT SPECIFIED INDEX CALLED IND.
+
+package array;
+
+import java.util.Arrays;
+
+public class ArrayInsert {
+    public static void main(String[] args) {
+        int index=3;
+        int ele=35;
+        int[] arr={10,20,30,40,50};
+        int[] res=new int[arr.length+1];
+        for (int i=0;i<index;i++){
+            res[i]=arr[i];
+        }
+        res[index]=ele;
+        for (int i=index;i<arr.length;i++){
+            res[i+1]=arr[i];
+        }
+        System.out.println(Arrays.toString(res));
+    }
+}
+
+"D:\Program Files\Java\jdk-19\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\lib\idea_rt.jar=54344:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\HP\IdeaProjects\Array\out\production\Array array.ArrayInsert
+[10, 20, 30, 35, 40, 50]
+
+Process finished with exit code 0
+
+
+write a program to delete a specific index.
+0
+package array;
+
+import java.util.Arrays;
+
+public class ArrayInsert {
+    public static void main(String[] args) {
+        int index=3;
+
+        int[] arr={10,20,30,40,50};
+        int[] res=new int[arr.length-1];
+        for (int i=0;i<index;i++){
+            res[i]=arr[i];
+        }
+        for (int i=index+1;i<arr.length;i++){
+            res[i-1]=arr[i];
+        }
+        System.out.println(Arrays.toString(res));
+    }
+}
+
+"D:\Program Files\Java\jdk-19\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\lib\idea_rt.jar=54352:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\HP\IdeaProjects\Array\out\production\Array array.ArrayInsert
+[10, 20, 30, 50]
+
+Process finished with exit code 0
+
+        
+
+Anti-clockwise array rotation.
+
+package array;
+
+import java.util.Arrays;
+
+public class Rotate {
+    static void rotate(int[] arr) {
+        int temp = arr[0];
+        for (int i = 1; i < arr.length ; i++) {
+            arr[i - 1] = arr[i];
+        }
+            arr[arr.length - 1] = temp;
+        }
+        public static void main(String[] args){
+        int[] arr={1,2,3,4,5};
+            for (int i=1;i<=2;i++){
+                rotate(arr);
+        }
+            System.out.println(Arrays.toString(arr));
+    }
+}
+
+
+Write a program to rotater a array in clockwise direction.
+
+import java.util.Arrays;
+
+public class Rotate {
+    static void rotate(int[] arr) {
+        int temp = arr[arr.length-1];
+         for (int i = arr.length-2; i >=0 ; i--) {
+            arr[i +1] = arr[i];
+        }
+            arr[0] = temp;
+        }
+        public static void main(String[] args){
+        int[] arr={1,2,3,4,5};
+            for (int i=1;i<=1;i++){
+                rotate(arr);
+        }
+            System.out.println(Arrays.toString(arr));
+    }
+}
+
+Write a program for linear search algorithm.
+
+public class LinearSearch {
+    static int search(int[] arr,int target){
+        for (int i=0;i<arr.length;i++){
+            if (arr[i]==target){
+               return i;
+            }
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+        int[] arr={1,2,3,4,5,};
+        int target=5;
+       System.out.println( search(arr,target));
+    }
+}
+
+o/p:4
+
+MERGESORT
+
+
+
+import java.util.Arrays;
+
+public class MergeSort {
+	public static int[] mergeSort(int[] arr) {
+		if(arr.length==1) {
+			return arr;
+		}
+		int mid=arr.length/2;
+		int[] left=mergeSort(Arrays.copyOfRange(arr,0, mid));
+		int[] right=mergeSort(Arrays.copyOfRange(arr, mid, arr.length));
+		return merge(left,right);
+		
+	}
+	public static int[] merge(int[] first,int[] second) {
+		int[] res=new int[first.length+second.length];
+		int i=0;
+		int j=0;
+		int k=0;
+		while(i<first.length && j<second.length) {
+			if(first[i]<second[j]) {
+				res[k]=first[i];
+				i++;
+				k++;
+			}
+			else {
+			res[k]=second[j];
+			j++;
+			k++;
+			}
+		}
+		while(i<first.length) {
+			res[k]=first[i];
+			i++;
+			k++;
+		}
+		while(j<second.length) {
+			res[k]=second[j];
+			j++;
+			k++;
+		}
+		return res;
+		}
+	public static void main(String[] args) {
+		int[] arr= {45,7,1,83,33,17,18,29,14};
+		int[] res=mergeSort(arr);
+		System.out.println(Arrays.toString(res));
+	}
+
+}
+
+in list for to get values from 2 dimension arr.get(i).get(j);
+
+to sort the lit or any collections
+==================================
+
+Collections.sort(reference of the list).
+
+Collections.max(reference).
+
+
+STRINGS
+=======
+
+pentagon space :sc.next()=tKES ONLY pentagon so we use sc.nextLine
+
+package com.string;
+
+import java.util.Scanner;
+
+public class String1 {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the name");
+	String s=sc.nextLine();
+	
+	for (int i=0;i<s.length();i++) {
+		System.out.println(s.charAt(i));
+	}
+}
+}
+
+
+package com.string;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class String1 {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the name");
+	String s=sc.nextLine();
+	
+	
+		
+		char[] arr=s.toCharArray();
+		System.out.println(Arrays.toString(arr));
+		System.out.println(arr[0]);
+	
+}
+}
+:it prints char at index 0.
+
+
+
+
+package com.string;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class String1 {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the name");
+	String s=sc.nextLine();
+	
+	
+		
+		char[] arr=s.toCharArray();
+		
+		System.out.println(arr);
+	
+}
+
+o/p:
+pentagon
+pentagon
+
+without using Arrays.toString(arr)) this it prints String
+
+
+
+Write a program to count present in given string.
+
+package com.string;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class String1 {
+public static void main(String[] args) {
+	String s ="pentagon";
+	int count=0;
+	for(int i=0;i<s.length();i++) {
+		char c=s.charAt(i);
+		if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u') {
+			count++;
+		}
+	}
+	System.out.println(count);
+}
+}
+
+o/p:3
+
+Write a program to count total number of vowels & consonents.
+
+package com.string;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class String1 {
+public static void main(String[] args) {
+	String s ="pentagon space";
+	int count=0;
+	int digit=0;
+	int space=0;
+	for(int i=0;i<s.length();i++) {
+		char c=s.charAt(i);
+		if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u') {
+			count++;
+		}
+		else if(c== ' ') {
+			space++;
+		}
+		else {
+			digit++;
+		}
+	}
+	System.out.println(count);
+	System.out.println(digit);
+	System.out.println(space);
+}
+}
+
+o/p:5 8 1
+
+Write a program to count number of vowels consonents spaces and total number 
+of special characters.
+
+Note: when u compare a character it will compare with the ascii value
+
+when we use == to compare strings it will compare the adress of the object 
+
+Write a program to reverse the string.
+
+package com.string;
+
+public class String1 {
+public static void main(String[] args) {
+	String s="pentagon";
+	String res="";
+	for(int i=s.length()-1;i>=0;i--) {
+		res=res+s.charAt(i);
+	}
+	System.out.println(res);
+}
+}
+
+
+palindrome
+==========
+package com.string;
+
+public class String1 {
+public static void main(String[] args) {
+	String s="malayalam";
+	String res="";
+	for(int i=s.length()-1;i>=0;i--) {
+		res=res+s.charAt(i);
+	}
+	System.out.println(res);
+	if(s.equals(res)) {
+		System.out.println("its palindrome");
+	}
+	else {
+		System.out.println("its not palindrome");
+	}
+}
+}
+
+its palindrome
+
+Write a program to check whether the given strings are anagram or not.
+
+
+package com.string;
+
+import java.util.Arrays;
+
+public class Anagram {
+	public static void main(String[] args) {
+		String s1="listen";
+		String s2="silent";
+		char[] arr1=s1.toCharArray();
+		char[] arr2=s2.toCharArray();
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
+		if(Arrays.equals(arr1,arr2)) {
+			System.out.println("its angaram");
+		}
+		else {
+			System.out.println("its not");
+		}
+	}
+
+}
+o/p:its anagram.
+
+write a progarm to print the substring 
+
+package com.string;
+
+public class Substring {
+	public static void main(String[] args) {
+		String s="hello";
+		for(int i=0;i<s.length();i++) {
+			String res="";
+			for(int j=i;j<s.length();j++) {
+				res=res+s.charAt(j);
+				System.err.println(res);
+			}
+		}
+	}
+
+}
+
+h
+he
+hel
+hell
+hello
+e
+el
+ell
+ello
+l
+ll
+llo
+l
+lo
+o
+
+Write a program to print all the palindromic substrings of the given string.
+
+package com.string;
+
+public class Substring {
+	static boolean palindrome(String up) {
+		String p="";
+		for(int i=up.length()-1;i>=0;i--) {
+			p=p+up.charAt(i);
+		}
+		if(p.equals(up)){
+			return true;
+		}
+		
+		return false;
+	}
+	public static void main(String[] args) {
+		String s="malayalam";
+		for(int i=0;i<s.length();i++) {
+			String res="";
+			for(int j=i;j<s.length();j++) {
+				res=res+s.charAt(j);	
+				if(palindrome(res)) {
+					System.out.println(res);
+					}
+			}
+		}
+			
+			
+		}
+}
+
+m
+malayalam
+a
+ala
+alayala
+l
+layal
+a
+aya
+y
+a
+ala
+l
+a
+m
+
+Write a program to print the longest substring which is palindrome.
+
+package com.string;
+
+public class Substring {
+	static boolean palindrome(String up) {
+		String p="";
+		for(int i=up.length()-1;i>=0;i--) {
+			p=p+up.charAt(i);
+		}
+		if(p.equals(up)){
+			return true;
+		}
+		
+		return false;
+	}
+	public static void main(String[] args) {
+		String s="malayalam";
+		int length=0;
+		String s1="";
+		for(int i=0;i<s.length();i++) {
+			String res="";
+			for(int j=i;j<s.length();j++) {
+				res=res+s.charAt(j);	
+				if(palindrome(res)) {
+					if(res.length()>length) {
+						s1=res;
+						length=res.length();
+					}
+					
+					}
+				
+			}
+			
+		}
+			System.out.println(s1);
+			
+		}
+}
+
+o/p:malayalam
+
+Stacks
+======
+push:adding into stack.
+pop:removing from stack.
+push==pop
+first pushed last poped
+stack is a class.
+
+stack object creation:Satck<Integer> stack=new Stack<>();
+
+Queue:it is a interface.
+  it extends list.  
+
+add:used to add 
+peek:used to show element present
+remov:used to remove
+
+object creation in queue
+------------------------
+Queue<Integer> queue=new LinkedLIst<>();
+
+Deque
+=====
+it promotes insertion deletion from both side.
+Deque<Integer> deque = new ArrayDeque<>();
+
+substring(1):it deletes the first character of the String.
+
+subString(0,4):it takes the character from 0 to 3 index of the String.
+
+
+public class Phone {
+    public static void main(String[] args) {
+        pad("","12");
+
+    }
+    static void pad(String p,String up){
+        if (up.isEmpty()){
+            System.out.println(p);
+            return;
+        }
+        int digit=up.charAt(0)+'0';//it converts char to digit
+        for (int i=(digit-1)*3;i<digit*3;i++){
+            char c=(char) ('a'+i);
+            pad(p+c,up.substring(1));
+        }
+    }
+}
+o/p:ad,ae,af,bd,be,bf,cd,ce,cf
+
+package phone;
+
+public class Dice {
+    public static void main(String[] args) {
+
+        dice("",4);
+    }
+
+    public static void dice(String p,int target){
+        if (target==0){
+            System.out.println(p);
+            return;
+        }
+        for (int i=1;i<=6&&i<=target;i++){
+            dice(p+i,target-i);
+        }
+    }
+}
+
+"D:\Program Files\Java\jdk-19\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\lib\idea_rt.jar=50273:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\HP\IdeaProjects\Search\out\production\Search phone.Dice
+1111
+112
+121
+13
+211
+22
+31
+4
+
+Process finished with exit code 0
+
+Write a program to print the all the subsequence of a string.
+
+Note:
+all the subsequence of ab are nothing but subsequence of a
+ with or without b.
+
+package com.string;
+
+public class SubSequence {
+	public static void main(String[] args) {
+		sequence("", "abc");
+	}
+	public static void sequence(String p,String up) {
+		if(up.isEmpty()) {
+			System.out.println(p);
+			return;
+		}
+		char c=up.charAt(0);
+		sequence(p+c, up.substring(1));
+		sequence(p, up.substring(1));
+		
+	}
+
+}
+
+abc
+ab
+ac
+a
+bc
+b
+c
+
+package com.string;
+
+public class SubSequence {
+	public static void main(String[] args) {
+		String s="";
+		String up="ABDEF";
+		for(int i=0;i<up.length();i++) {
+			char c=up.charAt(i);
+			c++;
+			s=c+s;
+			
+		}
+		System.out.println(s);
+	}
+	
+	
+}
+GFECB
+
+
+
+
+cpackage com.string;
+
+public class string2 {
+	public static void reverse(String s) {
+		String res="";
+		for(int i=0;i<s.length();i++) {
+			res=s.charAt(i)+res;
+		}
+		System.out.println(res);
+	}
+	public static void main(String[] args) {
+		String s="rama is running";
+		reverse(s);
+	}
+
+}
+
+gninnur si amar
+
+
+Tree Structure
+==============
+Root is main element which has branches
+
+Binary Tree has two branches 
+
+
+Time complexity
+===============
+cpu computation:it refers to task or instructions performed by the cpu
+
+main memeory space:it is used to store data or instructions temporarily for 
+                    cpu to perform program.
+ 
+
+time coplexity of  = sum of frequency count of instructions
+an algorithm            of an algorithm
+
+frequency count:number of times instruction executed.
+ O(1)=Best time complexity
+O(logn)=good
+O(n)=fair
+O(nlogn)=bad
+O(n!)=worst
+
+
+Write a program to print the hcfof  number.
+
+package phone;
+
+public class Hcf {
+    public static void main(String[] args) {
+        hcf(4,6);
+    }
+    public static void hcf(int a,int b){
+        int g=0;
+        for (int i=1;i<=b ;i++){
+            if (a%i==0&&b%i==0){
+                if (g<i){
+                    g=i;
+                }
+            }
+        }
+        System.out.println("gcd is "+g);
+    }
+}
+
+Write a program to print the lcm of numbers.
+
+package phone;
+
+public class Hcf {
+    public static void main(String[] args) {
+        hcf(4,6);
+    }
+    public static void hcf(int a,int b){
+        int g=0;
+        for (int i=1;i<=b ;i++){
+            if (a%i==0&&b%i==0){
+                if (g<i){
+                    g=i;
+                }
+            }
+        }
+        int lcm=(a*b)/g;
+        System.out.println("gcd is "+g);
+        System.out.println("lcm of two numbers "+lcm);
+    }
+}
